@@ -29,6 +29,11 @@ export default defineConfig({
   /* Limit workers on CI */
   workers: process.env.CI ? 1 : undefined,
 
+
+  /* retries:1,
+  
+  workers: 1, */
+
   /* Reporter configuration */
   reporter: [
     ['html'],
@@ -59,6 +64,9 @@ export default defineConfig({
 
     /* Ignore SSL certificate issues */
     ignoreHTTPSErrors: true,
+
+
+    permissions: ['geolocation'],
 
     /* Run headed mode if required */
     // headless: false,
