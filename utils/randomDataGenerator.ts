@@ -8,7 +8,7 @@ static getFirstName()
 
 }
 
-static getlastName()
+static getLastName()
 {
     return faker.person.lastName();
     

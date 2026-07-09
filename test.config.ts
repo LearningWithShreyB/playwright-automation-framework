@@ -1,5 +1,5 @@
 export class TestConfig {
-    static readonly appUrl = "https://tutorialsninja.com/demo/";
+    static readonly baseUrl = "https://tutorialsninja.com/demo/";
     
     // Valid login credentials
     static readonly email = "testing01a@gmail.com";
