@@ -1,16 +1,12 @@
-export class TestConfig{
- 
-    appUrl="http://localhost/opencart/upload/"
-    //appUrl="https://naveenautomationlabs.com/opencart"
-    //appUrl="https://tutorialsninja.com/demo/"
+export class TestConfig {
+    static readonly appUrl = "https://tutorialsninja.com/demo/";
     
-  
-    //valid login credentials
-    email="pavanol@abc.com"
-    password="test@123"
+    // Valid login credentials
+    static readonly email = "testing01a@gmail.com";
+    static readonly password = "Password1!";
 
-    //product details
-    productName="MacBook"
-    productQuantity="2"
-    totalPrice="$1,204.00"
+    // Product details
+    static readonly productName = "MacBook";
+    static readonly productQuantity = "2";
+    static readonly totalPrice = "$1,204.00";
 }
