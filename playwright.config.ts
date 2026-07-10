@@ -68,9 +68,9 @@ export default defineConfig({
 
     permissions: ['geolocation'],
 
-    /* Run headed mode if required */
+    /* Run headed mode if required
      headless: false,
-  },
+  },*/
 
   /* Run specific tagged tests */
   // grep: /@smoke/,
