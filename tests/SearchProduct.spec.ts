@@ -16,14 +16,14 @@ import { SearchResultsPage } from '../pages/SearchResultsPage';
 import { TestConfig } from '../test.config';
 
 // Declare reusable variables
-let config: TestConfig;
+//let config: TestConfig;
 let homePage: HomePage;
 let searchResultsPage: SearchResultsPage;
 
 // Playwright hook - runs before each test
 test.beforeEach(async ({ page }) => {
-  config = new TestConfig(); // Load configuration values like URL and product name
-  await page.goto(config.appUrl); // Step 1: Navigate to the application
+  //config = new TestConfig(); // Load configuration values like URL and product name
+  await page.goto(TestConfig.baseUrl); // Step 1: Navigate to the application
 
   // Initialize page objects
   homePage = new HomePage(page);
@@ -36,7 +36,7 @@ test.afterEach(async ({ page }) => {
 });
 
 test('Product search test @master @regression', async () => {
-  const productName = config.productName;
+  const productName = TestConfig.productName;
 
   // Step 2 & 3: Enter product name and click Search
   await homePage.enterProductName(productName);
